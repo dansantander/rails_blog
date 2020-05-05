@@ -1,3 +1,22 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.del_link {
+  color: red;
+  margin: 0 5px;
+
+  :hover {
+    color: red;
+  }
+}
+
+.edit_link {
+  color: green;
+  margin-left: 5px;
+
+  :hover {
+    color: green;
+  }
+}
+
