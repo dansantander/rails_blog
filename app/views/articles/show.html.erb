@@ -36,7 +36,10 @@
 <% end %>
 
 <%= link_to "<< Back to Articles List", articles_path %>
-<%= link_to "Edit", edit_article_path(@article), :class => 'edit_link' %>
-<%= link_to "delete", article_path, method: :delete,
-  data: { confirm: 'Are you sure?' },
- :class => 'del_link' %>
+
+<% if logged_in? %>
+  <%= link_to "Edit", edit_article_path(@article), :class => 'edit_link' %>
+  <%= link_to "delete", article_path, method: :delete,
+    data: { confirm: 'Are you sure?' },
+  :class => 'del_link' %>
+<% end %>
