@@ -21,10 +21,11 @@ The application was developed with [Ruby on Rails](https://rubyonrails.org/), [S
 ## Installation
 Follow the steps below to setup a local development environment. First ensure you have [Sqlite3](http://www.sqlite.org) installed, and a version of [Ruby on Rails](https://rubyonrails.org/) equal or greater than v5.2.3 .
 
-1. Clone the repository from a terminal `https://github.com/dansantander/rails_blog`.
+1. Clone the repository from a terminal `git clone https://github.com/dansantander/rails_blog`.
 2. Navigate to the project directory `rails_blog`
 3. Install project dependencies `bundle install`
-4. Start the rails server `rails server` and voila!!!
+4. Start the rails server `rails server`
+5. Visit localhost:3000 and Voila!!!
 
 ### Auth
 EndPoint                      |   Functionality
@@ -38,12 +39,18 @@ EndPoint                         |   Functionality
 GET /articles                    |   Allows a client to view all articles.
 GET /articles/:article_id        |   Allows a client to view a specific article.
 PATCH /articles/:article_id/edit |   Allows an author to edit an specific article.
-DELETE /articles/:article_id/edit|   Allows an author to delete an specific article.
+DELETE /articles/:article_id     |   Allows an author to delete an specific article.
 
 ### Comments
 EndPoint                           |   Functionality
 -----------------------------------|------------------------
 POST /articles/:article_id/comment |   Allows a client to comment on an article.
+
+### Tags
+EndPoint                           |   Functionality
+-----------------------------------|------------------------
+GET /tags                          |   Allows an client to view all tags.
+GET /tags/:tag_id                  |   Allows a author to view a specific tag.
 
 ## Authors
 
@@ -52,6 +59,12 @@ POST /articles/:article_id/comment |   Allows a client to comment on an article.
 - Github: [@codecell](https://github.com/codecell)
 - Twitter: [@the_codecell](https://twitter.com/the_codecell) 
 - Linkedin: [ezaka alfred](https://www.linkedin.com/in/alfrednoble/)
+
+👤 **Daniel Santander**
+
+- Github [Github profile](https://github.com/dansantander)
+- Twitter: [@pordios_cero](https://twitter.com/pordios_cero)
+- Linkedin: [daniel santander](https://www.linkedin.com/in/daniel-santander/)
 
 ## Show your support
 
